@@ -1,0 +1,11 @@
+dataset:
+  image_height: 256
+  image_width: 256
+  channels: 3
+train:
+  epochs: 200
+  classes: 1
+  batch: 16
+  augmentations:
+    resize:
+      size: 288

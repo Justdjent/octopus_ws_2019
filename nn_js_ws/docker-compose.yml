@@ -1,0 +1,11 @@
+version: "2"
+services:
+  react:
+    image: node:10.15.0
+    volumes:
+      - .:/frontend
+    working_dir: /frontend
+    ports:
+      - "3000:3000"
+    command: /bin/bash -c "npm install && npm start"
+  
